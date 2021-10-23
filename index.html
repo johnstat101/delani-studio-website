@@ -8,44 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Akan Names Website</title>
 </head>
-
 <body>
-    <script src="js/scripts.js"></script>
-    <div class="container">
-        <div class="row">
-
-            <div class="col-sm-3"></div>
-            <div class="col-md-6" id="col">
-                <h1>AKAN Name App</h1>
-                <p class="about"><b>About:</b> Akan-Name-App is a web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name
-                </p>
-                <hr>
-                <form id="form" onsubmit="event.preventDefault();">
-                    <label id="lblname">Enter your Name</label>
-                    <input id="userName" type="text" placeholder="firstName   lastName" required>
-                    <hr>
-
-                    <label id="lblBirthDay">Enter your BirthDay</label>
-                    <input type="date" id="birthDay" value="2021-10-10" style="width:140px;">
-
-                    <label id="lblGender">Gender</label>
-                    <select name="gender" id="gender">
-                        <option value="male">male</option>
-                        <option value="female">female</option>
-                    </select>
-                    <hr>
-
-                    <button onclick="akanName()">Display AKAN Name</button>
-                    <button id="clear" onclick="window.location.reload();">clear</button>
-                </form>
-                <p></p>
-                <p id="output"></p>
-                <hr>
-
-            </div>
-            <div class="col-sm-3"></div>
-        </div>
-    </div>
 </body>
 
 </html>
