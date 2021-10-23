@@ -28,3 +28,12 @@
 .about {
     text-align: center;
 }
+
+.services-image {
+    background-image: url('../img/backgrounds/s_image.jpg');
+    background-color: #cccccc;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
