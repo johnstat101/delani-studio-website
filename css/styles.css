@@ -64,3 +64,18 @@
     flex: 25%;
     padding: 5px;
 }
+
+.contact-us {
+    text-align: center;
+    color: white;
+}
+
+.contact-us-bg {
+    background-image: url('../img/backgrounds/c_image.jpg');
+    background-color: #cccccc;
+    background-position: center;
+    height: 300px;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
