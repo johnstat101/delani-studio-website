@@ -19,14 +19,23 @@
 
 #logo {
     width: 50px;
+    margin-bottom: 60px;
 }
 
 #mouse {
     width: 10px;
 }
 
+#intro {
+    font-size: 11px;
+}
+
 .about {
     text-align: center;
+}
+
+.about p {
+    font-size: 13.5px;
 }
 
 .services-image {
@@ -78,4 +87,35 @@
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
+}
+
+#user-message {
+    background-color: transparent;
+    color: white;
+    border: white solid 1px;
+}
+
+#user-name {
+    background-color: transparent;
+    color: white;
+    border: white solid 1px;
+}
+
+#user-email {
+    background-color: transparent;
+    color: white;
+    border: white solid 1px;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.contact-us-icons {
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
 }
