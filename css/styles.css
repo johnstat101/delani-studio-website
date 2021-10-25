@@ -1,13 +1,22 @@
 #design-text {
     display: none;
+    font-size: 12px;
 }
 
 #development-text {
     display: none;
+    font-size: 12px;
 }
 
 #product-text {
     display: none;
+    font-size: 12px;
+}
+
+div #design,
+#development,
+#product {
+    cursor: pointer;
 }
 
 .welcome-image {
@@ -86,6 +95,10 @@
 .work {
     flex: 25%;
     padding: 5px;
+}
+
+.portfolio p {
+    display: none;
 }
 
 .contact-us {
