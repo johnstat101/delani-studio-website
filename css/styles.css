@@ -1,3 +1,15 @@
+#design-text {
+    display: none;
+}
+
+#development-text {
+    display: none;
+}
+
+#product-text {
+    display: none;
+}
+
 .welcome-image {
     background-image: url('../img/backgrounds/h_img.jpg');
     background-color: #cccccc;
@@ -63,6 +75,8 @@
 
 .portfolio {
     text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .portfolio-images {
