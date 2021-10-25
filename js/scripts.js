@@ -26,25 +26,24 @@ $(document).ready(function() {
 })
 
 
-
 // User Inputs form section
 $(document).ready(function() {
     $("form").submit(function() {
         var name = $("input#user-name").val();
         var email = $("input#user-email").val();
         var message = $("input#user-message").val();
-        var $form = $("#subscribeForm");
+        var $form = $('form');
         if (name != "" && email != "" && message != "") {
             register($form);
-            // alert("Hello " + name + " we have received your message. Thank you for reaching out to us!");
+            alert("Hello " + name + " we have received your message. Thank you for reaching out to us!");
         };
         event.preventDefault();
     });
 });
 
-//
+
+//mailChimp functions **************************
 function register($form) {
-    $("#subscribeForm").val('Sending...');
     $.ajax({
         type: $form.attr('method'),
         url: $form.attr('action'),
@@ -52,16 +51,13 @@ function register($form) {
         cache: false,
         dataType: 'json',
         contentType: 'application/json; charset=utf-8',
-        error: function(err) { alert('Could not connect to the registration server. Please try again later.') },
+        error: function(err) {},
         success: function(data) {
             $("#subscribeForm").val('subscribe')
             if (data.result === 'success') {
                 //Success
-                $('#subscribe-result').html('<p>Thank you for subscribing. We have sent you a confirmation email.</p>')
-            } else {
-                // if error
-                $('#subscribe-result').html('<p>' + data.msg.substring(4) + '</p>')
-            }
+                $('#subscribe-result').html('<p>Thank you!</p>');
+            };
         }
-    })
+    });
 };
