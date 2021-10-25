@@ -1,3 +1,7 @@
+body {
+    font-family: sans-serif;
+}
+
 #design-text {
     display: none;
     font-size: 12px;
@@ -20,7 +24,6 @@ div #design,
 }
 
 .welcome-image {
-    background-color: #cccccc;
     height: 400px;
     background-position: center;
     background-size: cover;
@@ -55,12 +58,10 @@ div #design,
 }
 
 .about p {
-    font-size: 13.5px;
+    font-size: 14px;
 }
 
 .services-image {
-    background-image: url('../img/backgrounds/s_image.jpg');
-    background-color: #cccccc;
     background-position: center;
     height: 300px;
     background-size: cover;
@@ -114,9 +115,7 @@ div #design,
     color: white;
 }
 
-.contact-us-bg {
-    background-image: url('../img/backgrounds/c_image.jpg');
-    background-color: #cccccc;
+.contact-us-img {
     background-position: center;
     height: 300px;
     background-size: cover;

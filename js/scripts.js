@@ -17,8 +17,8 @@ $(document).ready(function() {
 
 // Portfolio section/ Hover effect **DRY code
 $(document).ready(function() {
-    var imagWork = ["img-work1", "img-work2", "img-work3", "img-work4", "img-work5", "img-work6", "img-work7", "img-work8"];
-    imagWork.forEach(function(img) {
+    var imagesWork = ["img-work1", "img-work2", "img-work3", "img-work4", "img-work5", "img-work6", "img-work7", "img-work8"];
+    imagesWork.forEach(function(img) {
         $("#" + img).hover(function() {
             $("#" + img + "-text").toggle();
         })
