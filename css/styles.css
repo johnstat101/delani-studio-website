@@ -20,7 +20,6 @@ div #design,
 }
 
 .welcome-image {
-    background-image: url('../img/backgrounds/h_img.jpg');
     background-color: #cccccc;
     height: 400px;
     background-position: center;
@@ -72,33 +71,42 @@ div #design,
 .services-text {
     color: white;
     text-align: center;
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 55%;
     left: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -50%);
+    font-size: 11px;
 }
 
 .what-we-do {
     text-align: center;
+    margin-top: 50px;
 }
 
 .portfolio {
     text-align: center;
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 50px;
 }
 
 .portfolio-images {
     display: flex;
+    cursor: pointer;
 }
 
 .work {
     flex: 25%;
     padding: 5px;
+    position: relative;
 }
 
-.portfolio p {
+.work p {
     display: none;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
 }
 
 .contact-us {
