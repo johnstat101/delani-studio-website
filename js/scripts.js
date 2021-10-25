@@ -33,9 +33,35 @@ $(document).ready(function() {
         var name = $("input#user-name").val();
         var email = $("input#user-email").val();
         var message = $("input#user-message").val();
+        var $form = $("#subscribeForm");
         if (name != "" && email != "" && message != "") {
-            alert("Hello " + name + " we have received your message. Thank you for reaching out to us!");
+            register($form);
+            // alert("Hello " + name + " we have received your message. Thank you for reaching out to us!");
         };
         event.preventDefault();
     });
 });
+
+//
+function register($form) {
+    $("#subscribeForm").val('Sending...');
+    $.ajax({
+        type: $form.attr('method'),
+        url: $form.attr('action'),
+        data: $form.serialize(),
+        cache: false,
+        dataType: 'json',
+        contentType: 'application/json; charset=utf-8',
+        error: function(err) { alert('Could not connect to the registration server. Please try again later.') },
+        success: function(data) {
+            $("#subscribeForm").val('subscribe')
+            if (data.result === 'success') {
+                //Success
+                $('#subscribe-result').html('<p>Thank you for subscribing. We have sent you a confirmation email.</p>')
+            } else {
+                // if error
+                $('#subscribe-result').html('<p>' + data.msg.substring(4) + '</p>')
+            }
+        }
+    })
+};
